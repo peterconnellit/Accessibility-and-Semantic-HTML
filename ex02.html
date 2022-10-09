@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add ARIA landmarks to a user form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Do your thing</h1>
+    </header>
+    <main>
+    <section class="section-exercise">
+        <form action="make-appointment">
+            <fieldset>
+                <legend>Your details</legend>
+                <label for="title1">
+                    Mr <input type="radio" name="title" id="title1">
+                </label>
+
+                <label for="title2">
+                    Mrs <input type="radio" name="title" id="title2">
+                </label>
+
+                <label for="title3">
+                    Miss <input type="radio" name="title" id="title3">
+                </label>
+
+                <label for="firstName">
+                    First Name<input class="form1" type="text" name="firstName" id="firstName" placeholder="First Name">
+                </label>
+
+                <label for="surname">
+                    Surname<input class="form1" type="text" name="surname" id="surname" placeholder="Surname">
+                </label>
+                
+                <label for="email">
+                    Email<input class="form1" type="text" name="email" id="email" placeholder="Email">
+                </label>
+                
+                <label for="phone">
+                    Phone<input class="form1" type="text" name="phone" id="phone" placeholder="Phone">
+                </label>             
+            </fieldset>
+
+            <fieldset>
+                <legend>Appointment</legend>
+                <p>Opening hours are Monday to Saturday, 8:30am to 5:30pm</p>
+
+                <label for="date">
+                    date<input class="form1" type="text" name="date" id="date" placeholder="date">
+                </label>
+                
+                <label for="time">
+                    time<input class="form1" type="text" name="time" id="time" placeholder="30 minute time slots">
+                </label>                
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+                <!--<input type="textbox" name="message" id="message">-->
+                <label for="message">
+                    message<textarea class="form1" name="textbox" id="message" cols="30" rows="10"></textarea>
+                </label>                
+            </fieldset>
+
+            <input type="submit" value="Send">
+        </form>
+
+    </section>
+    
+    <!--Added a section to wrap the articles together-->
+    <section class="impairment">
+        <Article>
+            <h2>Myopia</h2>
+            <p>Short Sighted, cannot see objects from far away.</p>
+        </Article>
+
+        <Article>
+            <h2>Hyperopia</h2>
+            <p>Able to see objects from a distance, may be out focus.</p>
+        </Article>
+
+        <Article>
+            <h2>Protanopia</h2>
+            <p>Colour blindness, red is more green.</p>
+        </Article>
+
+        <Article>
+            <h2>Deuteranopia</h2>
+            <p>Complete colour blindness.</p>
+        </Article>
+
+        <Article>
+            <h2>Tritanopia</h2>
+            <p>Blindness to blue. Cannot tell blue from yellow.</p>
+        </Article>
+    </section>
+    </main>
+</body>
+</html>

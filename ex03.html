@@ -1,0 +1,110 @@
+<!--Fix bad ARIA practices
+Ok, you've just started a new role. Great! Unfortunately, the previous employee had just heard about ARIA and before he left, decided to add the kitchen sink to every element he could find on the last bit of work he completed. It's your job to fix the code full of confusing, incorrect and unnecessary roles, landmarks and states, and simplify the code.
+
+a. Have a look at the html and find each bad practice. There are five rules of ARIA, you need to find which rule was broken and describe how the rule was broken. Do this in articles below the fixed code.
+
+b. fix the code. Remove the invalid and incorrect ARIA code so that the document is using the correct landmarks where needed and doesn't have them where it isn't needed
+
+c. Removing the landmarks is definitely not going to fully correct this document. Ensure that the correct semantic tags are being used to correctly identify the types of content. Ensure that the styling remains consistent, do not break the layout when you fix the code-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correct the Aria mess</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<div class="container">
+    <header class="ex03-header">
+        <div class="h1">
+            <h1>Technology store</h1>
+        </div>
+
+        <div class="search-navigation">
+            <span class="search">
+                <label for="search">
+                    Search<input type="text" name="search" id="search">
+                </label>
+            </span>
+
+            <nav class="shop-nav">
+            <ul>
+                <li><a href="#"> Home</a></li>              
+                <li><a href="#"> About</a></li>
+                <li><a href="#"> Shop</a></li>
+                <li class="help-link"> <a href="#">Help</a></li>
+            </ul>
+            </nav>
+        </div>
+</header>
+<main role="main">
+<div class="jumbotron" role="article" title="The technology landscape">
+    <h2 role="heading" title="Innovation" aria-label="Innovation driven">INNOVATION
+        DRIVEN</h2>
+    <div>
+        <div class="left-jumbo">
+            <p role="note" title="Summary">
+                The technology landscape is constantly shifting, so we continue to heavily invest in
+                providing our partners the solutions and services needed to flourish. With access to the
+                most innovative and diverse portfolio of technology providers, and the smartest
+                financial services proposition partners continue to deliver to best solution for their
+                customer at the right price.
+            </p>
+        </div>
+        <div class="right-jumbo">
+            <img src="https://via.placeholder.com/300" alt="a computer" role="img">
+        </div>
+    </div>
+            </div>
+            <section role="article">
+                <h2 role="banner">Top products</h2>
+                <div class="featured">
+                    <img src="https://via.placeholder.com/150" alt="product image">
+                    <img src="https://via.placeholder.com/150" alt="product image">
+                    <img src="https://via.placeholder.com/150" alt="product image">
+                </div>
+            </section>
+            <section role="article">
+                <h2 role="banner">Featured products</h2>
+                <div class="featured">
+                    <img src="https://via.placeholder.com/350" alt="product image">
+                    <img src="https://via.placeholder.com/350" alt="product image">
+                </div>
+            </section>
+            <section title="newsletter" role="article">
+                <h2 title="newsletter" aria-details="subscribe to our newsletter" role="banner">Newsletter</h2>
+                <div id="newsletter-subscribe" class="newsletter">
+                    <p>
+                        Subscribe to our monthly newsletter to receive up to the minute information about new products,
+                        news and the latest technological innovations
+                    </p>
+                    <div>
+                        <label for="newsletter">Subscribe</label>
+                        <input role="newsletter-subscription" aria-labelledby="newsletter-label" type="text"
+                            name="newsletter" id="newsletter" placeholder="me@example.com">
+                        <button type="button" role="button" title="button"> Subscribe</button>
+                    </div>
+                </div>
+            </section>
+
+            <article>
+                <h1>
+                    The five rules of Aria
+                </h1>
+                <p>1, Use Semantic HTML5 in Favour of ARIA.</p>
+                <p>2, Do not alter the Meaning of Semantic Elements with ARIA Roles.</p>
+                <p>3, ARIA Elements must be Accessible by all Mediums.</p>
+                <p>4, Appropriate Roles for Visible Focusable Elements.</p>
+                <p>5, Elements must have an Accessible Name.</p>
+
+                <p>Faults found include aria roles where not needed (due to semantic elements present). Role meanings changed (article to note). Aria roles within CSS. Contrast issues on help button (required for AA rating minimum). </p>
+                </article>
+
+        </main>
+    </div>
+</body>
+
+</html>
