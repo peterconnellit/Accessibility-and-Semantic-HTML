@@ -53,14 +53,15 @@ header.ex03-header  {
     background: #ECEFF1;
 }
 
-section[role="article"] {
-    padding: 0 20px
+.article{
+    padding: 0 20px;
 }
 
-.h1 {
+h1 {
     padding: 20px 0;
     font-size: 2em;
     font-weight: 600;
+    margin-top: 0;
 }
 
 .search-navigation {
@@ -115,14 +116,12 @@ li.help-link>a {
 .jumbotron>div {
     display: flex;
     align-items: center;
-
 }
 
 .left-jumbo {
     flex: 2;
     font-size: 1.5rem;
-    padding: 0 20px 0 0;
-   
+    padding: 0 20px 0 0;   
 }
 
 .right-jumbo {
@@ -156,7 +155,6 @@ article:nth-of-type(2n) {
 
 .newsletter>p {
     flex: 2;
-    text-align: justify;
     padding-right: 20px;
 }
 
@@ -165,7 +163,8 @@ article:nth-of-type(2n) {
     padding: 20px 0;
 }
 
-label[for="newsletter"] {
-    position: absolute;
-    left: -100%;
+footer{
+    padding: 0 20px;
+    background: #F5F5F5;
+    padding-bottom: 20px;
 }

@@ -17,7 +17,6 @@ c. Removing the landmarks is definitely not going to fully correct this document
 </head>
 
 <body>
-<div class="container">
     <header class="ex03-header">
         <div class="h1">
             <h1>Technology store</h1>
@@ -39,27 +38,27 @@ c. Removing the landmarks is definitely not going to fully correct this document
             </ul>
             </nav>
         </div>
-</header>
+    </header>
 
-<main>
-<div class="jumbotron" title="The technology landscape">
-    <h2 role="heading" title="Innovation">INNOVATION DRIVEN</h2>
-    <div>
-        <article class="left-jumbo">
-            <p title="Summary">
-                The technology landscape is constantly shifting, so we continue to heavily invest in
-                providing our partners the solutions and services needed to flourish. With access to the
-                most innovative and diverse portfolio of technology providers, and the smartest
-                financial services proposition partners continue to deliver to best solution for their
-                customer at the right price.
-            </p>
-        </article>
+    <main>
+        <div class="jumbotron" title="The technology landscape">
+            <h2 title="Innovation">INNOVATION DRIVEN</h2>
+            <div>
+                <article class="left-jumbo">
+                    <p title="Summary">
+                    The technology landscape is constantly shifting, so we continue to heavily invest in
+                    providing our partners the solutions and services needed to flourish. With access to the
+                    most innovative and diverse portfolio of technology providers, and the smartest
+                    financial services proposition partners continue to deliver to best solution for their
+                    customer at the right price.
+                    </p>
+                </article>
 
-        <aside class="right-jumbo">
-            <img src="https://via.placeholder.com/300" alt="a computer">
-        </aside>
-    </div>
+                <aside class="right-jumbo">
+                    <img src="https://via.placeholder.com/300" alt="a computer">
+                </aside>
             </div>
+        </div>
             <article>
                 <h2>Top products</h2>
                 <div class="featured">
@@ -76,38 +75,38 @@ c. Removing the landmarks is definitely not going to fully correct this document
                     <img src="https://via.placeholder.com/350" alt="">
                 </div>
             </article>
+    </main>
 
-            <section title="newsletter" role="article">
-                <h2 title="newsletter" aria-details="subscribe to our newsletter" role="banner">Newsletter</h2>
-                <div id="newsletter-subscribe" class="newsletter">
-                    <p>
-                        Subscribe to our monthly newsletter to receive up to the minute information about new products,
-                        news and the latest technological innovations
-                    </p>
-                    <div>
-                        <label for="newsletter">Subscribe</label>
-                        <input role="newsletter-subscription" aria-labelledby="newsletter-label" type="text"
-                            name="newsletter" id="newsletter" placeholder="me@example.com">
-                        <button type="button" role="button" title="button"> Subscribe</button>
-                    </div>
-                </div>
-            </section>
+    <footer title="newsletter">
+        <h2 title="newsletter">Newsletter</h2>
+        <div id="newsletter-subscribe" class="newsletter">
+            <p>
+                Subscribe to our monthly newsletter to receive up to the minute information about new products,
+                news and the latest technological innovations
+            </p>
+            <div>
+                <label for="newsletter">Subscribe            
+                    <input type="text" name="newsletter" id="newsletter" placeholder="me@example.com">
+                </label>
+                    
+                <button type="button" title="button"> Subscribe</button>
+            </div>
+        </div>
 
-            <article>
-                <h1>
-                    The five rules of Aria
-                </h1>
-                <p>1, Use Semantic HTML5 in Favour of ARIA.</p>
-                <p>2, Do not alter the Meaning of Semantic Elements with ARIA Roles.</p>
-                <p>3, ARIA Elements must be Accessible by all Mediums.</p>
-                <p>4, Appropriate Roles for Visible Focusable Elements.</p>
-                <p>5, Elements must have an Accessible Name.</p>
+        <article>
+            <h1>
+                The five rules of Aria
+            </h1>
+            <p>1, Use Semantic HTML5 in Favour of ARIA.</p>
+            <p>2, Do not alter the Meaning of Semantic Elements with ARIA Roles.</p>
+            <p>3, ARIA Elements must be Accessible by all Mediums.</p>
+            <p>4, Appropriate Roles for Visible Focusable Elements.</p>
+            <p>5, Elements must have an Accessible Name.</p>
 
-                <p>Faults found include aria roles where not needed (due to semantic elements present). Role meanings changed (article to note). Aria roles within CSS. Contrast issues on help button (required for AA rating minimum). </p>
-                </article>
-
-        </main>
-    </div>
+            <p>Faults found include aria roles where not needed (due to semantic elements present). Role meanings changed (article to note). Aria roles within CSS. Contrast issues on help button (required for AA rating minimum). </p>
+        </article>
+    </footer>
+        
 </body>
 
 </html>
