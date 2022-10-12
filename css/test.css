@@ -1,0 +1,12 @@
+.alert {
+  padding: 10px;
+  border: 2px solid rgb(66, 80, 91);
+  border-radius: 4px;
+  background: rgb(222, 222, 222);
+}
+
+.alert:empty {
+  display: none;
+}
+
+  
